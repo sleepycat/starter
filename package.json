@@ -9,7 +9,8 @@
     "start:prod": "NODE_ENV=production node build/server.js",
     "extract": "NODE_ENV=development lingui extract",
     "compile": "NODE_ENV=development lingui compile",
-    "add-locale": "lingui add-locale"
+    "add-locale": "lingui add-locale",
+    "dbg": "yarn start -- --inspect-brk"
   },
   "dependencies": {
     "express": "^4.16.2",
