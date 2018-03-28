@@ -1,0 +1,29 @@
+{
+  "Docs": {
+    "translation": "Documentation",
+    "origin": [
+      [
+        "src/Home.js",
+        31
+      ]
+    ]
+  },
+  "Issues": {
+    "translation": "problèmes",
+    "origin": [
+      [
+        "src/Home.js",
+        34
+      ]
+    ]
+  },
+  "Community Slack": {
+    "translation": "Slack de la communauté",
+    "origin": [
+      [
+        "src/Home.js",
+        37
+      ]
+    ]
+  }
+}

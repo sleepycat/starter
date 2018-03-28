@@ -1,4 +1,4 @@
 {
-  "presets": ["razzle/babel"],
+  "presets": ["razzle/babel", "lingui-react"],
   "plugins": ["react-loadable/babel"]
 }

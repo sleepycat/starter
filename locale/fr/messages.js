@@ -1,0 +1,1 @@
+module.exports={l:{"p":function(n,ord){if(ord)return n==1?"one":"other";return n>=0&&n<2?"one":"other"}},m:{"Docs":"Documentation","Issues":"probl\xE8mes","Community Slack":"Slack de la communaut\xE9"}};
