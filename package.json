@@ -5,7 +5,7 @@
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
-    "test": "razzle test --env=jsdom --coverage",
+    "test": "jest",
     "start:prod": "NODE_ENV=production node build/server.js",
     "extract": "NODE_ENV=development lingui extract",
     "compile": "NODE_ENV=development lingui compile",
@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "babel-preset-lingui-react": "^1.0.10",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-standard": "^11.0.0",
@@ -37,5 +39,22 @@
     "eslint-plugin-standard": "^3.0.1",
     "lingui-cli": "^1.4.4",
     "prettier": "^1.11.1"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.(js|jsx)$":
+        "<rootDir>/node_modules/razzle/config/jest/babelTransform.js",
+      "^.+\\.css$": "<rootDir>/node_modules/razzle/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)":
+        "<rootDir>/node_modules/razzle/config/jest/fileTransform.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js",
+      "<rootDir>/src/**/?(*.)(spec|test).js"
+    ],
+    "moduleFileExtensions": ["jsx", "js", "json"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"]
   }
 }

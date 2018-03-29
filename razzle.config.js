@@ -1,4 +1,4 @@
-const { ReactLoadablePlugin } = require('react-loadable/webpack');
+const { ReactLoadablePlugin } = require('react-loadable/webpack')
 
 module.exports = {
   modify: (config, { target }) => {
@@ -11,9 +11,9 @@ module.exports = {
             filename: './build/react-loadable.json',
           }),
         ],
-      };
+      }
     }
 
-    return config;
+    return config
   },
-};
+}
